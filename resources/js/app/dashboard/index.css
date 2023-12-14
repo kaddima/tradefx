@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+body{
+  margin: 0;
+  padding:0;
+  font-family: "Open Sans", sans-serif;
+
+}
+
+th{
+  padding: 11px;
+  background-color: white;
+  font-size: 12px;
+  text-align: left;
+  
+  
+}
+
+
+.fh{
+
+  height: 200px;
+}
+
+.fh-1rem{
+  height: calc(100% - 4rem);
+}
+
+
+.fh-4rem{
+  height: calc(100% - 4.5rem);
+}
+
+
+.fh-9rem{
+  height: calc(100% - 9rem);
+}
+
+.fh-32rem{
+  height: calc(100% - 32rem);
+}
+
+.-fw-4rem{
+  width: calc(100% - 80px) !important;
+}
+th:nth-last-child(1){
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  width: 7%;
+
+}
+
+.dark th{
+  @apply text-slate-300;
+
+}
+
+tr td{
+ 
+  padding: 7px 8px;
+  min-width: 10%;
+  height: 1rem;
+  color: #c2c2c2;
+  
+}
+
+td:nth-child(3){
+  width: 10%;
+  
+  
+}
+
+td:nth-child(4){
+  width: 10%;
+  padding-left: 2rem;
+}
+
+td:nth-of-type(1) div{
+  margin-left: 10px;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
