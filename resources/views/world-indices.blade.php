@@ -18,19 +18,19 @@
         <div class="w-4/5 mx-auto mt-5">
             <div class="text-xs">
                 <h1 class="font-bold text-sm">Trade major world indices</h1>
-                <p>A stock market index is a measurement of a section of the stock market. It is calculated from the prices of selected stocks. Stock market indices are used by investors to describe the market and compare the return on specific investments. Follow all the major world indices live with hlytopinvestments.com.</p>
+                <p>A stock market index is a measurement of a section of the stock market. It is calculated from the prices of selected stocks. Stock market indices are used by investors to describe the market and compare the return on specific investments. Follow all the major world indices live with Tradefx.</p>
             </div>
 
             <div class="mt-4 text-xs">
                 <h1 class="font-bold text-sm">What are some popular indices?</h1>
-                <p>CFDs provide opportunities to trade the world’s most popular indices. hlytopinvestments.com offers CFDs on a wide range of indices from all over the globe ranging from iconic indices like the NASDAQ 100, Dow Jones and FTSE 100 to more particular indices such as the Wig 20 or the IBEX 35.</p>
+                <p>CFDs provide opportunities to trade the world’s most popular indices. Tradefx offers CFDs on a wide range of indices from all over the globe ranging from iconic indices like the NASDAQ 100, Dow Jones and FTSE 100 to more particular indices such as the Wig 20 or the IBEX 35.</p>
             
                 <p>Take a look on this page to discover all the indices you can trade with us. You can organise the entirety of our indices instrument table by the most traded, most volatile, top risers and top fallers. Our interactive table displays prices in real time as well as shows the past two days percentage change. Follow live indices prices and charts here.</p>
             </div>
 
             <div class="mt-4 text-xs">
                 <h1 class="font-bold text-sm">Trade CFDs on indices</h1>
-                <p>The advantage of trading indices is that they have multiple components. We offer indices like the DAX that has 30 constituents, which measures the top performing German stocks, or much broader indices like the S&P 500. Multiple components not only diversify risk to an extent, but they offer the opportunity for greater volatility due to the fact that there are simply more moving parts. Trade CFDs on indices with hlytopinvestments.com now.</p>
+                <p>The advantage of trading indices is that they have multiple components. We offer indices like the DAX that has 30 constituents, which measures the top performing German stocks, or much broader indices like the S&P 500. Multiple components not only diversify risk to an extent, but they offer the opportunity for greater volatility due to the fact that there are simply more moving parts. Trade CFDs on indices with Tradefx now.</p>
             </div>
             <div class="mt-4 text-xs">
                 <h1 class="font-bold text-sm">Dividends and positions on indices</h1>
@@ -51,7 +51,7 @@
                 <div class="flex flex-col md:flex-row gap-4 items-center">
                     <div>
                         <span class="text-xl text-orange-300 font-bold">Why</span>
-                        <span class="text-lg font-bold">hlytopinvestments.com</span>
+                        <span class="text-lg font-bold">Tradefx</span>
                     </div>
                     <div class="flex-1 flex text-xs gap-4 items-center justify-center">
                         <div>
@@ -129,7 +129,7 @@
         <div class="bg-gray-900 text-white font-bold mt-8">
             <div class="w-10/12 md:w-4/5 mx-auto text-xs text-center py-10">
                 <h1 class="text-lg">Still looking for a broker you can trust?</h1>
-                <p class="text-xs font-semibold">Join the 50.000+ investors  that chose to trade with hlytopinvestments.com</p>
+                <p class="text-xs font-semibold">Join the 50.000+ investors  that chose to trade with Tradefx</p>
                 
                 <div class="mt-6 flex flex-col gap-3 md:flex-row md:justify-between ">
                     <div class="flex flex-col md:justify-center items-center">

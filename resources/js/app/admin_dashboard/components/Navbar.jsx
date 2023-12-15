@@ -62,10 +62,10 @@ const Navbar = () => {
 				customFunc={()=>dispatch(toggleActiveMenu('activeMenu'))}
 			/>
 			<div className=''>
-				<Link to="/dashboard" 
+				<Link to="/" 
 					className="items-center ml-3 flex text-xl 
 					font-extrabold tracking-tight dark:text-white  text-slate-900">
-						<img src="/images/logo/logo.png" className='w-28' alt="" />
+						Tradefx
 				</Link>	
 			</div>
 			<div className='w-12 border-l-1 flex pl-2' id='acct-modal-btn'>

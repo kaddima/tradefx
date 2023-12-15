@@ -1,6 +1,6 @@
 @extends('layout.layout')
 
-@section('title', 'What is Margin trading and how does it work | hlytopinvestments.com')
+@section('title', 'What is Margin trading and how does it work | Tradefx')
 
 @section('content')
 <div>
@@ -9,7 +9,7 @@
             <div class="w-11/12 md:w-4/5 h-3/5 mx-auto flex justify-center items-center">
                 <div>
                     <h1 class="font-bold text-xl md:text-2xl mb-3 text-center">The ultimate guide to margin trading</h1>
-                    <p class="text-sm text-center font-semibold md:text-sm">What is margin trading? What are the benefits and risks involved? Learn everything you need to know and find out how to trade on margin with hlytopinvestments.com.</p>
+                    <p class="text-sm text-center font-semibold md:text-sm">What is margin trading? What are the benefits and risks involved? Learn everything you need to know and find out how to trade on margin with Tradefx.</p>
                     <a href="/register" class="w-40 block py-1 text-center mt-3 md:py-2 rounded-lg mx-auto bg-orange-400 text-white font-semibold">Get started</a>
             
                 </div>
@@ -94,7 +94,7 @@
 
             <p>If you have a number of trades open, or you are trading a highly volatile asset class where large price swings occur quickly, you can suddenly find yourself with several large losses added together.</p>
             <h1 class="font-bold text-xl">Minimum equity requirement</h1>
-            <p>The money required to open a trade is interchangeably referred to as margin, initial margin, deposit margin or required margin. At hlytopinvestments.com, we call it required margin.</p>
+            <p>The money required to open a trade is interchangeably referred to as margin, initial margin, deposit margin or required margin. At Tradefx, we call it required margin.</p>
             <p>Your required margin depends on which assets you choose to invest in. It’s calculated as a percentage of the asset’s price, which is called the margin ratio. Every instrument has its own required margin. </p>
             <p>In CFD (contract for difference) trading, many forex pairs have a margin requirement of 3.333%. Indices and popular commodities such as gold have a margin requirement of 5%. 
                 For riskier assets such as cryptocurrencies, which are not available to UK retail clients, it may be as high as 50%.</p>
@@ -116,7 +116,7 @@
             <p>A margin call is a warning that your trade has gone against you and you no longer have enough funds to cover losses. A margin call happens when the amount of equity you hold in your margin account becomes too low to support your borrowing. </p>
             <p>In other words, it means that your broker is about to reach the maximum amount it can lend you, and you must add funds or close positions to stop further losses.</p>
             <p>When you receive a margin call, you should not ignore it and do nothing. This could lead to a margin closeout, where your broker closes your trades and you risk losing everything.</p>
-            <p>As of May 2022, hlytopinvestments.com sends about 38,500 margin call emails to clients every day.</p>
+            <p>As of May 2022, Tradefx sends about 38,500 margin call emails to clients every day.</p>
             <p>You could put in safeguards to prevent a margin call from happening, such as using a stop order. It’s always better to prepare for the worst case scenario, because markets are volatile and extremely hard to predict with any degree of accuracy. </p>
             
             <div class="">
@@ -161,7 +161,7 @@
             <p>You can trade cautiously, using limit orders rather than market orders, or with stop-loss orders in place to curb individual losses. You can monitor your trades and close loss-making orders quickly to avoid a margin call and margin closeout.</p>
             <p>f a market suddenly moves against you while you have a trade open, you could potentially lose everything you have in your margin account and still owe more.</p>
             <p>Even if your broker works hard to close out all your positions, it might not be possible to close them fast enough to stop the losses.</p>
-            <p>Some retail trading platforms, like hlytopinvestments.com, offer guarantees that in the event of the broker’s close out failing to limit losses in your maintenance margin, they will write off any extra debt.</p>
+            <p>Some retail trading platforms, like Tradefx, offer guarantees that in the event of the broker’s close out failing to limit losses in your maintenance margin, they will write off any extra debt.</p>
             <p>In that case, you would only lose the money you had deposited with the broker.</p>
 
             <h1 class="font-bold text-2xl">What is margin closeout?</h1>
@@ -177,13 +177,13 @@
                 <img class="w-full" src="{{asset('media/Margin-trading-guide--MCT-5532-EN-2.png')}}" alt=""> 
             </div>
             <p>Profitable and loss-making positions offset each other. But if the sum of your trades puts you in a loss-making position, that total must be higher than what is covered by the money in your account. In other words, you need at least 100% overall margin.</p>
-            <p>You can see your margin percentage in the hlytopinvestments.com mobile app and on the web trading platform. When you sign up, you should commit to actively monitoring your margin and keeping it above 100%.</p>
-            <p>Margin closeout happens when you no longer have sufficient funds deposited to maintain your trading positions. At hlytopinvestments.com, we close out your positions to protect you from unlimited losses, and to protect ourselves from unlimited liability.</p>
+            <p>You can see your margin percentage in the Tradefx mobile app and on the web trading platform. When you sign up, you should commit to actively monitoring your margin and keeping it above 100%.</p>
+            <p>Margin closeout happens when you no longer have sufficient funds deposited to maintain your trading positions. At Tradefx, we close out your positions to protect you from unlimited losses, and to protect ourselves from unlimited liability.</p>
             <h1 class="font-bold text-2xl"></h1>
             
             <h1 class="font-bold text-xl">How to recover from margin closeout</h1>
-            <p>A margin closeout is never a pleasant experience. Remember, you are not alone. Among hlytopinvestments.com trading platform’s clients, half have experienced a margin closeout at some point. </p>
-            <p>As of May 2022, every day, hlytopinvestments.com closes out between 800 and 3,000 clients whose trades have turned against them. This is to ensure client protection.</p>
+            <p>A margin closeout is never a pleasant experience. Remember, you are not alone. Among Tradefx trading platform’s clients, half have experienced a margin closeout at some point. </p>
+            <p>As of May 2022, every day, Tradefx closes out between 800 and 3,000 clients whose trades have turned against them. This is to ensure client protection.</p>
             <p>If you get a margin closeout, remember that it’s not the end of the world. Look back on your trading history and analyse what you can change to prevent a closeout in the future. </p>
             <p>Maybe you didn’t use sufficient risk management tools, or didn’t have a comprehensive trading strategy, or didn’t stick to the plan due to emotional factors? Learning from mistakes is vital and will help you to recover.</p>
             <p>Monitoring your account and keeping an eye on any open positions is very important. Using an efficient, fast-loading app to track your trades could save you a lot of frustration. When you get a margin call, you must be able to react as fast and decide if you want to add more funds in order to keep your trades open.</p>
@@ -216,7 +216,7 @@
 <div class="bg-gray-900 text-white font-bold mt-8">
     <div class="w-10/12 md:w-4/5 mx-auto text-xs text-center py-10">
         <h1 class="text-lg">Still looking for a broker you can trust?</h1>
-        <p class="text-xs font-semibold">Join the 50.000+ investors  that chose to trade with hlytopinvestments.com</p>
+        <p class="text-xs font-semibold">Join the 50.000+ investors  that chose to trade with Tradefx</p>
         
         <div class="mt-6 flex flex-col gap-3 md:flex-row md:justify-between ">
             <div class="flex flex-col md:justify-center items-center">

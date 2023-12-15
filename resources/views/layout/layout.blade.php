@@ -10,8 +10,8 @@
       <link rel="icon" href="{{asset('images/logo/favicon.png')}}">
     	<!-- Open graph -->
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="hlytop investments">
-	<meta property="og:description" content="hlytop investment is built with powerful suite of technology that helps you optimize your trading speed and efficiency and perform sophisticated portfolio analysis.">
+	<meta property="og:title" content="Tradefx">
+	<meta property="og:description" content="Tradefx is built with powerful suite of technology that helps you optimize your trading speed and efficiency and perform sophisticated portfolio analysis.">
 	<meta property="og:url" content="/">
 	<meta property="og:image" content="{{asset('images/logo/logo.png')}}}">
     <link rel="stylesheet" href="{{asset('css/app.css?v.1.1.0')}}">
@@ -31,9 +31,7 @@
                 </div>
                 <div class="font-extrabold text-3xl">
                     <a href="/">
-                        <div class="w-32 md:w-40 h-[4.5rem]">
-                            <img src="{{asset('images/logo/logo.png')}}" class="w-full h-full" alt="">
-                        </div>
+                        TradeFx
                     </a>
                 </div>
 
@@ -61,9 +59,6 @@
         {{-- <div class="mt-8 w-11/12 mx-auto rounded-3xl h-16 bg-blue-100"></div> --}}
 
         <div class="border p-5 text-sm">
-            <div class='p-5 mb-4'>
-                <p class='text-center text-xs font-semibold'>Also you can contact us: <a href='mailto:support@hlytopinvestments.com' class='pl-4'>support@hlytopinvestments.com</a></p>
-            </div>
             <div class="text-xs w-4/5 mx-auto">
                 <div class="flex flex-col md:flex-row md: justify-between">
                     <div>
@@ -108,33 +103,6 @@
                         </div>
                     </div>
 
-                    {{-- <div class="mt-4 md:mt-0">
-                        <h1  class='text-sm font-extrabold mb-3 py-2 bg-gray-50 md:p-0 md:bg-transparent'>News and Analysis</h1>
-                        <div class=''>
-                            <div>
-                                <ul class='space-y-2'>
-                                    <li class='text-sm font-bold'>News</li>
-                                    <div class="pl-3 space-y-2">
-                                        <li><a>Analysis</a></li>
-                                        <li><a>Insights</a></li>
-                                        <li><a>Explainers</a></li>
-                                        <li><a></a></li>
-                                    </div>
-
-                                </ul>
-                            </div>
-                            <div>
-                                <ul class='space-y-2'>
-                                    <li class='text-sm font-bold'>Market updates</li>
-                                    <div class="space-y-2 pl-3">
-                                        <li>Webinars</li>
-                                    <li>Economic Calender</li>
-                                    </div>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div> --}}
 
                     <div class="mt-4 md:mt-0">
                         <h1  class='text-sm font-extrabold mb-3 py-2 bg-gray-50 md:p-0 md:bg-transparent'>Learn to trade</h1>
@@ -174,7 +142,7 @@
                                     <div class="space-y-2 pl-3">
                                         <li className='text-sm font-bold'><a href="/about-us">About us</a></li>
                                         <li><a href="/regulations">Regulations</a></li>
-                                        <li><a href="/is-hlytop-safe">is hlytopinvestments.com safe?</a></li>
+                                        <li><a href="/is-tradefx-safe">is tradefx safe?</a></li>
                                         <li><a href="/compliance">Compliance</a></li>
                                     </div>
 
@@ -191,21 +159,6 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div class="bg-main-dark-bg text-white rounded md:rounded-2xl space-y-2 md:space-y-4 p-3 md:p-9 mt-5" >
-                        <p>Risk warning: transactions with non-deliverable over-the-counter instruments are a risky activity and can bring not only profit but also losses. The size of the potential loss is limited to the funds held by us for and on your behalf, in relation to your trading account. Past profits do not guarantee future profits. Use the training services of our company to understand the risks before you start operations.</p>
-                        <p>Closed joint-stock company “hlytop Investments” is regulated by NBRB, registered 19.03.2018 with company registration number 193222154. Certificate of inclusion in the register of forex companies No. 16 dated 16.04.2018. </p>
-                    </div>
-                    <div class="mt-5">
-                        <div class="flex space-x-2 items-center">
-                            <h1 class="text-lg text-slate-400 font-bold">In Partnership with </h1>
-                            <div class="w-14 rounded-md overflow-hidden">
-                                <img src="{{asset('images/unnamed (1).png')}}" alt="" class="w-full">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>

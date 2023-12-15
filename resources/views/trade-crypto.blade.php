@@ -1,6 +1,6 @@
 @extends('layout.layout')
 
-@section('title', 'Crpto Trading | Trade CFD on cryptocurrencies | hlytopinvestments.com')
+@section('title', 'Crpto Trading | Trade CFD on cryptocurrencies | Tradefx')
 
 @section('content')
 <div>
@@ -166,7 +166,7 @@
             </ul>
 
             <h1 class="font-bold text-2xl md:text-2xl">What are the most popular cryptocurrencies?</h1>
-            <p>Investors often wonder which cryptocurrencies to buy. Although there is no definite answer to this question, we can take a closer look at the list of most-traded cryptocurrencies at hlytopinvestments.com and compare it with the list of the most valuable cryptocurrencies by market capitalisation from CoinMarketcap. </p>
+            <p>Investors often wonder which cryptocurrencies to buy. Although there is no definite answer to this question, we can take a closer look at the list of most-traded cryptocurrencies at Tradefx and compare it with the list of the most valuable cryptocurrencies by market capitalisation from CoinMarketcap. </p>
             <div class="">
                 <img class="w-full" src="{{asset('media/-infographics-Cryptocurrency-trading-guide_new-9.png')}}" alt=""> 
             </div>
@@ -305,7 +305,7 @@
             </div>
             <p>Liquidity. Liquidity measures how easily an asset can be turned into cash, without impacting the market price. If an asset is more liquid, it brings about better pricing and faster transaction times. The cryptocurrency market is considered illiquid, partly due to the distribution of orders across exchanges, as noted by price disparity. This means that a relatively small number of trades can have a large impact on market prices; one factor contributing to cryptocurrency volatility. However, when trading CFDs on cryptocurrencies, you can gain exposure a lot easier because you are not trying to buy the underlying asset, simply a derivative product.</p>
             <p>Leverage. CFDs can be traded on margin. This means a trader only needs to put down a fraction of the value of their trade, and in essence, borrow the remaining capital from their broker. This allows for more accessibility, greater exposure and amplified results. This can be particularly useful for cryptocurrencies, given the huge volatility the asset class witnesses, but this also brings increased risks.</p>
-            <p>Ability to go long or short. When purchasing cryptocurrency itself, you can only profit when the market is rising. However, with hlytopinvestments.com, you can profit in both falling and rising markets due to the ability to short sell CFDs on cryptocurrency. If the trade goes against you can make losses too.</p>
+            <p>Ability to go long or short. When purchasing cryptocurrency itself, you can only profit when the market is rising. However, with Tradefx, you can profit in both falling and rising markets due to the ability to short sell CFDs on cryptocurrency. If the trade goes against you can make losses too.</p>
             <p>Tax-efficient trading: Trading CFDs on a cryptocurrency can offer benefits over holding the cryptocurrency itself. CFDs are useful for hedging your existing portfolio because if your expectations are wrong, in certain jurisdictions, you can offset any losses incurred with CFDs against the capital gains charged on the increase of your portfolio.</p>
             <p>Note: CFDs are considered a short-term investment due to overnight charges for maintaining positions.</p>
 
@@ -325,7 +325,7 @@
 <div class="bg-gray-900 text-white font-bold mt-8">
     <div class="w-10/12 md:w-4/5 mx-auto text-xs text-center py-10">
         <h1 class="text-lg">Still looking for a broker you can trust?</h1>
-        <p class="text-xs font-semibold">Join the 50.000+ investors  that chose to trade with hlytopinvestments.com</p>
+        <p class="text-xs font-semibold">Join the 50.000+ investors  that chose to trade with Tradefx</p>
         
         <div class="mt-6 flex flex-col gap-3 md:flex-row md:justify-between ">
             <div class="flex flex-col md:justify-center items-center">

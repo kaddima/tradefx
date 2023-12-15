@@ -9,7 +9,7 @@ use PHPMailer\PHPMailer\Exception;
 
 //CONSTANT
 define('SITE_LOGO_PATH', __DIR__.'/../public/images/logo/logo.png');
-define('EMAIL_USERNAME','support@hlytopinvestments.com');
+define('EMAIL_USERNAME','support@williamsteve');
 define('EMAIL_PASSWORD','Hlyt@p123');
 define('MAIL_HOST','smtp.hostinger.com');
 
@@ -47,7 +47,7 @@ class Mailer{
             $mail->Password = EMAIL_PASSWORD;
 
             //Set who the message is to be sent from
-            $mail->setFrom(EMAIL_USERNAME, 'Hlytop investment');
+            $mail->setFrom(EMAIL_USERNAME, 'Tradefx');
 
             //set reply to
             $mail->addReplyTo(EMAIL_USERNAME);
@@ -68,7 +68,7 @@ class Mailer{
             <body>
                 <div>
                     <div style="max-width:200px; margin:0 auto">
-                        <img src="https://hlytopinvestments.com/images/logo/logo.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;">
+                        <img src="https://Tradefx/images/logo/logo.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;">
                     </div>'.
                     $message
                 .'</div>

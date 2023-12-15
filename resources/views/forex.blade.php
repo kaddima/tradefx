@@ -8,7 +8,7 @@
        <div class="bg-blue-50 text-center px-5 py-6">
             <div class="lg:w-3/5 mx-auto">
                 <h1 class="font-bold text-xl mb-5">Trade Forex CFDs </h1>
-                <p>Trade CFDs on a wide variety of the world’s most popular currency pairs. Follow the major economic announcements on hlytopinvestments.com’s economic calendar and take advantage of the volatile FX market that doesn’t sleep.</p>
+                <p>Trade CFDs on a wide variety of the world’s most popular currency pairs. Follow the major economic announcements on Tradefx’s economic calendar and take advantage of the volatile FX market that doesn’t sleep.</p>
                 <a href="/register" class="w-40 block mt-5 py-4 rounded-lg mx-auto bg-orange-400 text-white font-semibold">Get started</a>
             
             </div>
@@ -17,7 +17,7 @@
 
         <div class="w-4/5 mx-auto mt-5">
             <div class="text-xs">
-                <h1 class="font-bold text-sm">Trade Forex CFDs with hlytopinvestments.com</h1>
+                <h1 class="font-bold text-sm">Trade Forex CFDs with Tradefx</h1>
                 <p>The FX market is one of the world’s biggest markets. You can trade currency pairs from every corner of the world. However, there are a handful of pairs that are worth mentioning: more traded than any other currency pairs, the ‘majors’ dominate the FX market.</p>
                 <p>The four most traded currency pairs in the world have been coined the ‘majors’. They involve the following currencies: euro, US dollar, Japanese yen and pound sterling. The most popular pairing is the EUR/USD, followed by the USD/JPY, GBP/USD and USD/CHF pairs respectively.</p>
                 <p>There are a few other currencies that deserve to be mentioned. Informally known as the ‘commodity pairs’, the AUD/USD or ‘Aussie’, USD/CAD and NZD/USD are all frequently traded currency pairs. Unsurprisingly, this group of currencies derives its nickname from the fact that they come from countries that possess large quantities of natural resources.</p>
@@ -25,7 +25,7 @@
 
             <div class="mt-4 text-xs">
                 <h1 class="font-bold text-sm">Advantages of trading currency pairs</h1>
-                <p>The FX market is one of the most exciting and fast-paced for traders. Open 24/6 and being the biggest global market means it is extremely liquid; you can instantly buy and sell, so you’re never stuck in a trade. Daily currency fluctuations are usually fairly small, political disasters aside, moving around 1% or 100 pips. Study live forex rates and charts here. You can trade forex CFDs with hlytopinvestments.com. The availability of leveraged trading in this market can amplify wins, but similarly, can amplify losses.</p>
+                <p>The FX market is one of the most exciting and fast-paced for traders. Open 24/6 and being the biggest global market means it is extremely liquid; you can instantly buy and sell, so you’re never stuck in a trade. Daily currency fluctuations are usually fairly small, political disasters aside, moving around 1% or 100 pips. Study live forex rates and charts here. You can trade forex CFDs with Tradefx. The availability of leveraged trading in this market can amplify wins, but similarly, can amplify losses.</p>
             </div>
         </div>
 
@@ -34,7 +34,7 @@
                 <div class="flex flex-col md:flex-row gap-4 items-center">
                     <div>
                         <span class="text-xl text-orange-300 font-bold">Why</span>
-                        <span class="text-lg font-bold">hlytopinvestments.com</span>
+                        <span class="text-lg font-bold">Tradefx</span>
                     </div>
                     <div class="flex-1 flex text-xs gap-4 items-center justify-center">
                         <div>
@@ -110,7 +110,7 @@
         <div class="bg-gray-900 text-white font-bold mt-8">
             <div class="w-10/12 md:w-4/5 mx-auto text-xs text-center py-10">
                 <h1 class="text-lg">Still looking for a broker you can trust?</h1>
-                <p class="text-xs font-semibold">Join the 50.000+ investors  that chose to trade with hlytopinvestments.com</p>
+                <p class="text-xs font-semibold">Join the 50.000+ investors  that chose to trade with Tradefx</p>
                 
                 <div class="mt-6 flex flex-col gap-3 md:flex-row md:justify-between ">
                     <div class="flex flex-col md:justify-center items-center">

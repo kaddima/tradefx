@@ -10,8 +10,8 @@
                     <div class="bg-slate-200 rounded-xl h-full pt-6">
                         <div class="px-5 space-y-5">
                             <a href="/" class="block">
-                                <div class="w-32 md:w-40 h-[4.5rem] mx-auto">
-                                    <img src="{{asset('images/logo/logo.png')}}" class="w-full h-full" alt="">
+                                <div class="w-32 mx-auto text-2xl font-extrabold">
+                                    Tradefx
                                 </div>
                             </a>
                             <ul class="space-y-10 text-slate-800 font-bold">

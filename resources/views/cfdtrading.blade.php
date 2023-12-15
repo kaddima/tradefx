@@ -8,7 +8,7 @@
     <div class="mx-auto w-11/12 md:4/5 xl:w-3/5 relative h-full flex items-center">
         <div class="absolute w-full z-20 md:w-4/5">
             <h1 class="text-xl md:text-4xl font-extrabold">CFD Trading on over 3,100 markets</h1>
-            <p class="mt-3">CFD Trading with hlytopinvestments.com gives you access to over 6,100 markets including stocks, equities, indices and Forex. Enjoy low-spreads and fast execution on an intuitive CFD trading platform. Tailored for traders that want to take advantage of potential opportunities in global markets.</p>
+            <p class="mt-3">CFD Trading with Tradefx gives you access to over 6,100 markets including stocks, equities, indices and Forex. Enjoy low-spreads and fast execution on an intuitive CFD trading platform. Tailored for traders that want to take advantage of potential opportunities in global markets.</p>
         </div>
         <div class="absolute h-full z-10 md:right-0 -mt-16">
             <img class="h-full" src="{{asset('media/cfd-page-banner.png')}}">
@@ -23,7 +23,7 @@
 </div>
 
 <div class="w-4/5 mx-auto mt-10 gap-2">
-    <h1 class="text-xl md:text-2xl w-full font-extrabold text-center">Benefits of trading CFDs with hlytopinvestments.com</h1>
+    <h1 class="text-xl md:text-2xl w-full font-extrabold text-center">Benefits of trading CFDs with Tradefx</h1>
     <div class="flex  md:flex-row flex-col-reverse mt-5">
         <div class="md:w-2/5"> 
             <ul class="space-y-5 font-semibold">
@@ -89,8 +89,8 @@
         <div class="mt-6 flex flex-col md:flex-row gap-3 justify-between ">
             <div class="md:flex-1">
                 <div class="w-12 h-12 mb-4 flex justify-center items-center border rounded-full"><span class="material-icons">person_add</span></div>
-                <h1 class="text-left text-xl">1. Sign up with hlytopinvestments.com</h1>
-                <p class="text-sm font-bold mt-3 text-left">It is simple to apply for a CFD trading account with hlytopinvestments.com. You will need then to complete verification, which may require you to provide proof of identity and proof of address documents.</p>
+                <h1 class="text-left text-xl">1. Sign up with Tradefx</h1>
+                <p class="text-sm font-bold mt-3 text-left">It is simple to apply for a CFD trading account with Tradefx. You will need then to complete verification, which may require you to provide proof of identity and proof of address documents.</p>
             </div>
             <div class=" md:flex-1">
                 <div class="w-12 h-12 mb-4 flex justify-center items-center border rounded-full"><span class="material-icons">credit_card</span></div>
@@ -112,7 +112,7 @@
 </div>
 
 <div class="w-4/5 mx-auto mt-10">
-    <h1 class="text-xl md:text-2xl w-full font-extrabold text-center">Benefits of trading CFDs with hlytopinvestments.com</h1>
+    <h1 class="text-xl md:text-2xl w-full font-extrabold text-center">Benefits of trading CFDs with Tradefx</h1>
     <div class="flex flex-col md:flex-row mt-5 gap-3">
         <div class="md:w-3/6"> 
             <ul class="space-y-5 font-semibold">
@@ -137,7 +137,7 @@
                          <span class="material-icons">favorite</span>
                          <span class="inline-block ml-3">Fantastic customer support</span>
                      </div> 
-                     <p class="text-xs">With hlytopinvestments.com help is always at hand. We offer 24/7 customer support in 12+ languages.</p>
+                     <p class="text-xs">With Tradefx help is always at hand. We offer 24/7 customer support in 12+ languages.</p>
                 </li>
                 
             </ul>
@@ -158,7 +158,7 @@
                         <span class="material-icons">bar_chart</span>
                         <span class="inline-block ml-3">Advanced charts</span>
                     </div>
-                    <p class="text-xs">hlytopinvestments.com offers an exceptional online CFD trading experience with over 75 technical indicators available alongside instant price alerts. You can track movements on assets with ease and make your move with the help of advanced tools.</p> 
+                    <p class="text-xs">Tradefx offers an exceptional online CFD trading experience with over 75 technical indicators available alongside instant price alerts. You can track movements on assets with ease and make your move with the help of advanced tools.</p> 
                 </li>
                 <li>
                 
@@ -166,7 +166,7 @@
                         <span class="material-icons">lightbulb</span>
                         <span class="inline-block ml-3">Top educational materials</span>
                     </div> 
-                    <p class="text-xs">Learn more about trading with in-depth guides, webinars, videos and so much more. With hlytopinvestments.com, you can access interactive resources that can help you make more informed trading decisions.</p>
+                    <p class="text-xs">Learn more about trading with in-depth guides, webinars, videos and so much more. With Tradefx, you can access interactive resources that can help you make more informed trading decisions.</p>
                 </li>
                 
             </ul>
@@ -189,7 +189,7 @@
             </div>
         </div>
         <div class="mt-8 md:w-3/5 md:pl-5">
-            <h1 class="text-2xl md:text-4xl">With hlytopinvestments.com help is always at hand.</h1>
+            <h1 class="text-2xl md:text-4xl">With Tradefx help is always at hand.</h1>
             <p class="text-sm md:mt-8 md:text-lg">We offer 24/7 customer support</p>
             <a href="/register" class="w-40 block mt-8 py-4 text-center border rounded-3xl bg-gray-700 text-white font-semibold">Got a questions</a>
             
@@ -200,7 +200,7 @@
 <div class="md:w-4/5 mx-auto rounded-3xl text-gray-200 mt-8 bg-main-dark-bg py-5 px-10">
     <div class="md:flex justify-between py-3 border-b-2 border-gray-100">
         <span>Still looking for a broker you can trust?</span>
-        <span class="text-xs hidden md:block">hlytopinvestments.com Group</span>
+        <span class="text-xs hidden md:block">Tradefx Group</span>
     </div>
 
     <div class="flex flex-col md:flex-row gap-3 font-semibold">

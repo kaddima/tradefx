@@ -32,7 +32,7 @@
             </div>
             <div class="md:w-2/4">
                 <h1 class="text-xl mb-4"><span class="font-semibold">Invite your friend</span>  to join the most beautiful trading app</h1>
-                <p class="text-sm">Refer your friend directly from your hlytopinvestments.com account in a mobile app or web platform</p>
+                <p class="text-sm">Refer your friend directly from your Tradefx account in a mobile app or web platform</p>
             </div>
         </div>
         <div class="md:flex items-center mt-12">
@@ -41,7 +41,7 @@
             </div>
             <div class="order-1 mt-4 md:mt-0 md:w-2/4">
                 <h1 class="text-xl mb-4">
-                    Make sure <span class="font-semibold">they open an account</span> with hlytopinvestments.com</h1>
+                    Make sure <span class="font-semibold">they open an account</span> with Tradefx</h1>
                 <p class="text-sm">After your friend deposit, they will get a referee bonus:</p>
                 <ul class="pl-10 space-y-1 text-sm mt-2">
                     <li>Personal account manager</li>
@@ -77,7 +77,7 @@
 <div class="bg-gray-900 text-white font-bold mt-8">
     <div class="w-10/12 md:w-4/5 mx-auto text-xs text-center py-10">
         <h1 class="text-lg">Still looking for a broker you can trust?</h1>
-        <p class="text-xs font-semibold">Join the 50.000+ investors  that chose to trade with hlytopinvestments.com</p>
+        <p class="text-xs font-semibold">Join the 50.000+ investors  that chose to trade with Tradefx</p>
         
         <div class="mt-6 flex flex-col gap-3 md:flex-row md:justify-between ">
             <div class="flex flex-col md:justify-center items-center">

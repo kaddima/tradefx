@@ -1,6 +1,6 @@
 @extends('layout.layout')
 
-@section('title', 'Stock Trading Guide | How to start trading stocks | hlytopinvestments.com')
+@section('title', 'Stock Trading Guide | How to start trading stocks | Tradefx')
 
 @section('content')
 <div>
@@ -9,7 +9,7 @@
             <div class="w-11/12 md:w-4/5 h-3/5 mx-auto flex justify-center items-center">
                 <div>
                     <h1 class="font-bold text-xl md:text-2xl mb-3 text-center">Your guide to trading shares</h1>
-                    <p class="text-sm text-center font-semibold md:text-sm">Trade shares CFDs, currency pairs, commodities, cryptocurrencies and indices through hlytopinvestments.com’s award-winning platform. 0% commission & tight spreads. Capital com group is licensed by CySEC, FCA, ASIC, FSA & NBRB. Available on web and mobile.</p>
+                    <p class="text-sm text-center font-semibold md:text-sm">Trade shares CFDs, currency pairs, commodities, cryptocurrencies and indices through Tradefx’s award-winning platform. 0% commission & tight spreads. Capital com group is licensed by CySEC, FCA, ASIC, FSA & NBRB. Available on web and mobile.</p>
                     <a href="/register" class="w-40 block py-1 text-center mt-3 md:py-2 rounded-lg mx-auto bg-orange-400 text-white font-semibold">Get started</a>
             
                 </div>
@@ -68,9 +68,9 @@
                
             </ul>
 
-            <h1 class="font-bold text-2xl">Why trade shares CFDs with hlytopinvestments.com?</h1>
+            <h1 class="font-bold text-2xl">Why trade shares CFDs with Tradefx?</h1>
             <p>Advanced AI technology at its core: A Facebook-like news feed provides users with personalised and unique content depending on their preferences. If a trader makes decisions based on biases, the innovative News Feed offers a range of materials to put him back on the right track. The neural network analyses in-app behaviour and recommends videos and articles to help polish your investment strategy.</p>
-            <p>Trading on margin: Providing trading on margin (5:1 for major shares), hlytopinvestments.com gives you access to the stock market with the help of CFDs.</p>
+            <p>Trading on margin: Providing trading on margin (5:1 for major shares), Tradefx gives you access to the stock market with the help of CFDs.</p>
             <p>Trading the difference: When trading CFDs on shares you don’t buy the underlying asset itself, meaning you are not tied to it. You only speculate on the rise or fall of its share price. CFD trading is no different from traditional trading in terms of its associated strategies. When trading CFDs you can go short or long, set stop and limit losses. So whether your outlook on a particular stock is positive or negative, you can trade this market in either direction.</p>
             <p>Focus on safety: Captal.com puts a special emphasis on safety. Capital com group is licensed by CySEC, FCA, ASIC & NBRB, it complies with all regulations and ensures that its clients’ data security comes first. The company allows to withdraw money 24/7 and keeps traders’ funds across segregated bank accounts.</p>
         </div>
@@ -89,7 +89,7 @@
 <div class="bg-gray-900 text-white font-bold mt-8">
     <div class="w-10/12 md:w-4/5 mx-auto text-xs text-center py-10">
         <h1 class="text-lg">Still looking for a broker you can trust?</h1>
-        <p class="text-xs font-semibold">Join the 50.000+ investors  that chose to trade with hlytopinvestments.com</p>
+        <p class="text-xs font-semibold">Join the 50.000+ investors  that chose to trade with Tradefx</p>
         
         <div class="mt-6 flex flex-col gap-3 md:flex-row md:justify-between ">
             <div class="flex flex-col md:justify-center items-center">

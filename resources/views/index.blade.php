@@ -37,57 +37,13 @@
                 <img src="{{asset('images/crd-technology.svg')}}" class="w-16" alt="">
                 <div>
                     <h1>Premier Technology</h1>
-                    <span class="text-xs">hlytop investment's powerful suite of technology helps you optimize your trading speed and efficiency and perform sophisticated portfolio analysis.</span>
+                    <span class="text-xs">Tradefx's powerful suite of technology helps you optimize your trading speed and efficiency and perform sophisticated portfolio analysis.</span>
                 </div>
-            </div>
-        </div>
-        <div class="bg-main-dark-bg text-gray-50 py-10 md:py-20">
-            <div class="text-center w-4/5 mx-auto">
-                <h1 class="font-extrabold text-3xl md:text-6xl">Chart. Chat. Trade. Repeat</h1>
-                <p class="text-xl font-semibold mt-5">Join 30 millions traders and investors making better, brighter decisions in the world markets.</p>
-
-            </div>
-
-            <div class="mt-15 px-5 w-4/5 mx-auto">
-                <video class="w-full" autoplay loop muted src="{{asset('media/binray.mp4')}}"></video>
-            </div>
-        </div>
-        <div class="bg-white py-20">
-            <div class="w-4/5 mx-auto">
-                <div class="flex flex-col md:flex-row gap-5">
-                    <div class="md:w-2/4">
-                        <img src="{{asset('images/trading-tech.jpeg')}}" alt="">
-                    </div>
-                    <div class="md:w-2/4 space-y-5">
-                        <h1 class="pl-3 text-2xl">Leverage Technology Built to Help You Get Ahead</h1>
-                        <div class="flex flex-col md:flex-row flex-wrap text-sm space-y-3 md:space-y-0">
-                            <div class="md:w-2/4 space-y-2 px-3">
-                                <h1 class="text-xl font-semibold text-orange-400">Trading Platforms</h1>
-                                <p>Powerful enough for the professional trader but designed for everyone.</p>
-                            </div>
-                            <div class="md:w-2/4 space-y-2 px-3">
-                                <h1 class="text-xl font-semibold text-orange-400">Order Types and Algos</h1>
-                                <p>100+ order types – from limit orders to complex algorithmic trading – help you execute any trading strategy.</p>
-                            </div>
-                            <div class="md:w-2/4 space-y-2 px-3">
-                                <h1 class="text-xl font-semibold text-orange-400">Free Trading Tools</h1>
-                                <p>Spot market opportunities, analyze results, manage your account and make better decisions with our free trading tools.</p>
-                            </div>
-                            <div class="md:w-2/4 space-y-2 px-3">
-                                <h1 class="text-xl font-semibold text-orange-400">Comprehensive Reporting</h1>
-                                <p>Real-time trade confirmations, margin details, transaction cost analysis, sophisticated portfolio analysis and more.</p>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
             </div>
         </div>
 
         <div class="w-4/5 m-auto mt-5">
-            <h1 class="font-extrabold md:text-6xl leading-none text-center">Real Time updates & news alerts for 2,100+ markets</h1>
+            <h1 class="font-extrabold md:text-6xl leading-none text-center">Real Time updates & news alerts for 1,000+ markets</h1>
 
             <h1 class="text-3xl font-bold my-5 text-orange-400">Market summary</h1>
             <div id="assets" class=" m-auto mt-10">
@@ -113,23 +69,19 @@
                             to protect our clients from large trading losses.</p>
                           <div class="flex flex-col md:flex-row flex-wrap gap-10 spacey-5 md:space-y-0">
                             <div class="mr-2">
-                                <h1 class="text-3xl">$448M</h1>
+                                <h1 class="text-3xl">$1.1M</h1>
                                 <span class="text-xs">Equity capital</span>
                             </div>
                             <div class="mr-2">
-                                <h1 class="text-3xl">76.5%</h1>
-                                <span class="text-xs">Privately Held*</span>
-                            </div>
-                            <div class="mr-2">
-                                <h1 class="text-3xl">$261M</h1>
+                                <h1 class="text-3xl">$1M</h1>
                                 <span class="text-xs">Excess Regulatory Capital*</span>
                             </div>
                             <div class="mr-2">
-                                <h1 class="text-3xl">1.1M</h1>
+                                <h1 class="text-3xl">1</h1>
                                 <span class="text-xs">Client Accounts*</span>
                             </div>
                             <div>
-                                <h1 class="text-3xl">202K</h1>
+                                <h1 class="text-3xl">1.5K</h1>
                                 <span class="text-xs">Daily Avg Revenue Trades*</span>
                             </div>
                           </div>
@@ -159,7 +111,7 @@
                                 </li>
                                 <li class="flex gap-2">
                                     <span class='material-icons font-extrabold text-orange-500'>check</span>
-                                   <p>hlytop investment helps support best execution by searching for the best available prices for stocks, options and combinations across exchanges and dark pools.</p>
+                                   <p>Tradefx helps support best execution by searching for the best available prices for stocks, options and combinations across exchanges and dark pools.</p>
                                 </li>
                                 <li class="flex gap-2">
                                     <span class='material-icons font-extrabold text-orange-500'>check</span>

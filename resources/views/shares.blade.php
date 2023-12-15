@@ -8,7 +8,7 @@
        <div class="bg-blue-50 text-center px-5 py-6">
             <div class="lg:w-3/5 mx-auto">
                 <h1 class="font-bold text-xl mb-5">Trade Share CFDs</h1>
-                <p>Speculate on over 5000+ shares with hlytopinvestments.com’s award-winning platform. Identify trading opportunities with over 75 indicators and drawing tools.</p>
+                <p>Speculate on over 5000+ shares with Tradefx’s award-winning platform. Identify trading opportunities with over 75 indicators and drawing tools.</p>
                 <a href="/register" class="w-40 block mt-5 py-4 rounded-lg mx-auto bg-orange-400 text-white font-semibold">Get started</a>
             
             </div>
@@ -23,11 +23,11 @@
 
             <div class="text-xs mt-4">
                 <h1 class="font-bold text-sm">Why trade shares?</h1>
-                <p>Share trading is one of the most popular forms of trading on offer. Whether that be in stock markets or trading derivatives like CFDs. Join hlytopinvestments.com and start online stocks and shares trading.</p>
+                <p>Share trading is one of the most popular forms of trading on offer. Whether that be in stock markets or trading derivatives like CFDs. Join Tradefx and start online stocks and shares trading.</p>
             </div>
 
             <div class="text-xs mt-4">
-                <h1 class="font-bold text-sm">What cryptocurrencies can be traded with hlytopinvestments.com?</h1>
+                <h1 class="font-bold text-sm">What cryptocurrencies can be traded with Tradefx?</h1>
                 <p>If you trade CFDs on shares you are exempt for stamp duty that you would pay on shares normally. CFDs can be traded on margin, providing greater leverage for your capital, making the markets more accessible. With CFDs you have the ability to short sell, so you can trade both a rising or falling market. Leveraged trading allows you to take greater advantage of smaller moves in the markets. CFD trading can amplify your wins but also your losses, however with zero balance protection, your balance will never fall before zero.</p>
             </div>
 
@@ -38,7 +38,7 @@
                 <div class="flex flex-col md:flex-row gap-4 items-center">
                     <div>
                         <span class="text-xl text-orange-300 font-bold">Why</span>
-                        <span class="text-lg font-bold">hlytopinvestments.com</span>
+                        <span class="text-lg font-bold">Tradefx</span>
                     </div>
                     <div class="flex-1 flex text-xs gap-4 items-center justify-center">
                         <div>
@@ -115,7 +115,7 @@
         <div class="bg-gray-900 text-white font-bold mt-8">
             <div class="w-10/12 md:w-4/5 mx-auto text-xs text-center py-10">
                 <h1 class="text-lg">Still looking for a broker you can trust?</h1>
-                <p class="text-xs font-semibold">Join the 50.000+ investors  that chose to trade with hlytopinvestments.com</p>
+                <p class="text-xs font-semibold">Join the 50.000+ investors  that chose to trade with Tradefx</p>
                 
                 <div class="mt-6 flex flex-col gap-3 md:flex-row md:justify-between ">
                     <div class="flex flex-col md:justify-center items-center">

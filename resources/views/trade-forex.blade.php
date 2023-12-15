@@ -1,6 +1,6 @@
 @extends('layout.layout')
 
-@section('title', 'Forex Trading | Trade CFD on forex | hlytopinvestments.com')
+@section('title', 'Forex Trading | Trade CFD on forex | Tradefx')
 
 @section('content')
 <div>
@@ -127,7 +127,7 @@
 
             <h1 class="font-bold text-2xl">What is a forex trading platform?</h1>
             <p>From the top interbank traders to bedroom-based retail investors, all currency trading is performed on some kind of computer platform-based interface.</p>
-            <p>All forex trading platforms - including hlytopinvestments.com’s access to forex CFD trading - provide investors with appropriate tools to enable them to make their investment choices. These may include research tools such as charts, historical data and access to news and analyst reports.</p>
+            <p>All forex trading platforms - including Tradefx’s access to forex CFD trading - provide investors with appropriate tools to enable them to make their investment choices. These may include research tools such as charts, historical data and access to news and analyst reports.</p>
             <p>Retail trading platforms may have a similar look and feel to those used by professional institutional traders, but remember, it’s not institutional money you’re trading with. You will be margin trading, most likely using leverage, so be careful to use the full range of tools these platforms provide, particularly the stops.</p>
             
             <h1 class="font-bold text-2xl">Most popular currency pairs</h1>
@@ -214,15 +214,15 @@
             <p>Bear market/bearish - indicating a market or asset price in decline</p>
             <p>Bear - traders who expect prices to fall and may be holding short positions</p>
 
-            <h1 class="font-bold text-xl md:text-2xl">Why use hlytopinvestments.com’s forex trading platform?</h1>
+            <h1 class="font-bold text-xl md:text-2xl">Why use Tradefx’s forex trading platform?</h1>
             <h1 class="font-bold text-xl">Advanced AI technology at its core</h1>
             <p>A Facebook-like news feed provides users with personalised and unique content depending on their preferences. If a trader makes decisions based on biases, the innovative News Feed offers a range of materials to put him back on the right track. The neural network analyses in-app behaviour and recommends videos and articles to help polish your investment strategy.</p>
             <h1 class="font-bold text-xl">Trading on margin</h1>
-            <p>Providing CFC trading on margin (up to 30:1 for major currency pairs), hlytopinvestments.com gives you access to the wide range of popular forex markets without you needing to have a large amount of funds in your account.</p>
+            <p>Providing CFC trading on margin (up to 30:1 for major currency pairs), Tradefx gives you access to the wide range of popular forex markets without you needing to have a large amount of funds in your account.</p>
             <h1 class="font-bold text-xl">Trading the difference</h1>
             <p>When trading CFDs on currency pairs you don’t buy the underlying base currency itself. You instead speculate on the rise or fall of its value. CFD trading is no different from traditional trading in terms of its associated strategies. When trading CFDs you can go short or long, set stop and limit losses.</p>
             <h1 class="font-bold text-xl">All-round trading analysis</h1>
-            <p>The browser-based platform allows traders to shape their own market analysis and forecasts with sleek technical indicators. hlytopinvestments.com provides live market updates and various chart formats, available on desktop, iOS, and Android. Study live currency pairs within the platform while simultaneously browsing tailored news based on your trading behaviour.</p>
+            <p>The browser-based platform allows traders to shape their own market analysis and forecasts with sleek technical indicators. Tradefx provides live market updates and various chart formats, available on desktop, iOS, and Android. Study live currency pairs within the platform while simultaneously browsing tailored news based on your trading behaviour.</p>
             <h1 class="font-bold text-xl">Focus on safety</h1>
             <p>Captal.com puts a special emphasis on safety. Capital com group is licensed by CySEC, FCA, ASIC, FSA & NBRB, it complies with all regulations and ensures that its clients’ data security comes first.</p>
             <p></p>
@@ -243,7 +243,7 @@
 <div class="bg-gray-900 text-white font-bold mt-8">
     <div class="w-10/12 md:w-4/5 mx-auto text-xs text-center py-10">
         <h1 class="text-lg">Still looking for a broker you can trust?</h1>
-        <p class="text-xs font-semibold">Join the 50.000+ investors  that chose to trade with hlytopinvestments.com</p>
+        <p class="text-xs font-semibold">Join the 50.000+ investors  that chose to trade with Tradefx</p>
         
         <div class="mt-6 flex flex-col gap-3 md:flex-row md:justify-between ">
             <div class="flex flex-col md:justify-center items-center">

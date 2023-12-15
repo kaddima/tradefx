@@ -1,6 +1,6 @@
 @extends('layout.layout')
 
-@section('title', 'CFD Meaning | What is CFD trading | hlytopinvestments.com')
+@section('title', 'CFD Meaning | What is CFD trading | Tradefx')
 
 @section('content')
 <div>
@@ -148,7 +148,7 @@
 <div class="bg-gray-900 text-white font-bold mt-8">
     <div class="w-10/12 md:w-4/5 mx-auto text-xs text-center py-10">
         <h1 class="text-lg">Still looking for a broker you can trust?</h1>
-        <p class="text-xs font-semibold">Join the 50.000+ investors  that chose to trade with hlytopinvestments.com</p>
+        <p class="text-xs font-semibold">Join the 50.000+ investors  that chose to trade with Tradefx</p>
         
         <div class="mt-6 flex flex-col gap-3 md:flex-row md:justify-between ">
             <div class="flex flex-col md:justify-center items-center">

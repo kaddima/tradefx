@@ -118,7 +118,7 @@ import React, {useState} from 'react'
                     <ul className='space-y-4'>
                         <li className='text-sm font-bold'><a href="/about-us">About us</a></li>
                         <li><a href="/regulations">Regulations</a></li>
-                        <li><a href="/is-hlytop-safe">is hlytopinvestments.com safe?</a></li>
+                        <li><a href="/is-tradefx-safe">is Tradefx safe?</a></li>
                         <li><a href="/compliance">Compliance</a></li>
                     </ul>
                 </div>
@@ -233,9 +233,6 @@ const app = () => {
             <a href="/signin" className='w-3/4 p-2 rounded-lg border block text-center mx-auto font-bold hover:bg-orange-200'>Sign in</a>
             <a href="/register" className='w-3/4 p-2 rounded-lg bg-orange-500 block mx-auto text-center mt-5 
             text-gray-200 font-bold hover:bg-orange-400'>Register</a>
-        </div>
-        <div className='mt-5'>
-            <p className='text-center text-xs font-semibold'>Also you can contact us: <a href='mailto:support@hlytopinvestments.com' className='pl-4'>support@hlytopinvestments.com</a></p>
         </div>
     </div>
   )

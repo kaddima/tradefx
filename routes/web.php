@@ -42,7 +42,7 @@ Route::view('/cfd-trading', 'cfdtrading');
 Route::view('/charges-and-fees', 'charges_and_fees');
 
 Route::view('/about-us', 'about-us');
-Route::view('/is-hlytop-safe', 'is-hlyton-safe');
+Route::view('/is-tradefx-safe', 'is-tradefx-safe');
 Route::view('/compliance', 'compliance');
 Route::view('/regulations', 'regulation');
 Route::view('/referral-programme', 'referral-programme');

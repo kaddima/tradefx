@@ -17,18 +17,18 @@
 
         <div class="w-4/5 mx-auto mt-5">
             <div class="text-xs">
-                <h1 class="font-bold text-sm">Trade cryptocurrency CFDs with hlytopinvestments.com</h1>
+                <h1 class="font-bold text-sm">Trade cryptocurrency CFDs with Tradefx</h1>
                 <p>What is a cryptocurrency? A cryptocurrency is a digital asset conceived for use as a medium of exchange, which uses cryptography to secure transactions, control the supply of additional units and corroborate transfers. In short, cryptocurrency is a decentralised electronic currency.</p>
             </div>
 
             <div class="text-xs mt-4">
                 <h1 class="font-bold text-sm">Why trade cryptocurrencies?</h1>
-                <p>Cryptocurrencies have the tendency to be particularly volatile, so they provide various opportunities for traders to open positions with big movements. Leveraged trading provides high liquidity, matched with the reputation cryptocurrencies have for being highly volatile, means that trading cryptocurrencies with hlytopinvestments.com provides greater opportunities in markets.</p>
+                <p>Cryptocurrencies have the tendency to be particularly volatile, so they provide various opportunities for traders to open positions with big movements. Leveraged trading provides high liquidity, matched with the reputation cryptocurrencies have for being highly volatile, means that trading cryptocurrencies with Tradefx provides greater opportunities in markets.</p>
             </div>
 
             <div class="text-xs mt-4">
-                <h1 class="font-bold text-sm">What cryptocurrencies can be traded with hlytopinvestments.com?</h1>
-                <p>hlytopinvestments.com offers a variety of cryptocurrencies that can be traded in relation to many different currencies. We offer pairings with the following cryptocurrencies: Bitcoin, Litecoin, Ripple, TRON, Ethereum and many others. Study cryptocurrency price charts with hlytopinvestments.com</p>
+                <h1 class="font-bold text-sm">What cryptocurrencies can be traded with Tradefx?</h1>
+                <p>Tradefx offers a variety of cryptocurrencies that can be traded in relation to many different currencies. We offer pairings with the following cryptocurrencies: Bitcoin, Litecoin, Ripple, TRON, Ethereum and many others. Study cryptocurrency price charts with Tradefx</p>
             </div>
 
 
@@ -45,7 +45,7 @@
                 <div class="flex flex-col md:flex-row gap-4 items-center">
                     <div>
                         <span class="text-xl text-orange-300 font-bold">Why</span>
-                        <span class="text-lg font-bold">hlytopinvestments.com</span>
+                        <span class="text-lg font-bold">Tradefx</span>
                     </div>
                     <div class="flex-1 flex text-xs gap-4 items-center justify-center">
                         <div>
@@ -122,7 +122,7 @@
         <div class="bg-gray-900 text-white font-bold mt-8">
             <div class="w-10/12 md:w-4/5 mx-auto text-xs text-center py-10">
                 <h1 class="text-lg">Still looking for a broker you can trust?</h1>
-                <p class="text-xs font-semibold">Join the 50.000+ investors  that chose to trade with hlytopinvestments.com</p>
+                <p class="text-xs font-semibold">Join the 50.000+ investors  that chose to trade with Tradefx</p>
                 
                 <div class="mt-6 flex flex-col gap-3 md:flex-row md:justify-between ">
                     <div class="flex flex-col md:justify-center items-center">

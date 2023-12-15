@@ -44,7 +44,7 @@ class PasswordResetController extends Controller
                  <div style="width:80%;padding: 20px 10px;margin: auto;" class="border">
         <div style="text-align: center">
             <h2 style="font-size: 2rem;font-weight: bold; margin-bottom: 12px;opacity: .8">Password Reset</h2>
-            <p>You have requested to reset your password on hlytoninvestments.com.
+            <p>You have requested to reset your password on Tradefxninvestments.com.
             Please click the link below to reset your password.</p>
 
             <a href="$url" style="background: #007bff; padding: .5em;
