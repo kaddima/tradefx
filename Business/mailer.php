@@ -9,8 +9,8 @@ use PHPMailer\PHPMailer\Exception;
 
 //CONSTANT
 define('SITE_LOGO_PATH', __DIR__.'/../public/images/logo/logo.png');
-define('EMAIL_USERNAME','support@williamsteve');
-define('EMAIL_PASSWORD','Hlyt@p123');
+define('EMAIL_USERNAME','');
+define('EMAIL_PASSWORD','');
 define('MAIL_HOST','smtp.hostinger.com');
 
 
