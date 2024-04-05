@@ -24,7 +24,6 @@
     <body>
         <div id="root"></div>
 
-    <script src="{{asset('js/jquery-3.6.0.js')}}"></script>
     <script src="{{ asset('js/manifest.js') }}"></script>
     <script src="{{ asset('js/vendor.js') }}"></script>
     <script src="{{asset('js/dashboard_bundle.js?v1')}}"></script>

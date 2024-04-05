@@ -2,15 +2,11 @@ import React,{useEffect, useState}  from 'react'
 import {Link} from "react-router-dom"
 import { useSelector, useDispatch } from 'react-redux'
 import _ from 'lodash'
-
 import { isFuture,parseISO,differenceInSeconds } from 'date-fns'
 
 import {AiOutlineMenu} from "react-icons/ai"
 import {BiChevronDown} from "react-icons/bi"
 
-
-import { toggleActiveMenu,setActiveMenu_screenSize,
-	} from '../store/mainSlice'
 import { updateAccountWithOutBackup } from '../store/accountSlice'
 
 
@@ -18,7 +14,7 @@ const NavButton = ({title, customFunc,icon,color,dotColor})=>{
 	return(
 		<button title={title} type='button'
 			style={{color}}
-			className="relative text-xl rounded-full p-3 hover:bg-light-gray" 
+			className="relative text-xl block md:hidden rounded-full p-3 hover:bg-light-gray" 
 			onClick={customFunc}>
 			<span style={{background:dotColor}}
 			className="absolute inline-flex rounded-full h-2 w-2 right-2 top-2"/>
@@ -40,8 +36,6 @@ const Navbar = () => {
 
 	
 	const dispatch = useDispatch()
-
-	const[screenSize,setScreenSize] = useState()
 	const currentColor = useSelector(state=>state.main.currentColor)
 	const portfolios = useSelector(state=>state.portfolio.portfolios)
 
@@ -49,32 +43,23 @@ const Navbar = () => {
 	const accountBalanceBackup = useSelector(state=>state.account.accountBackup)
 	const tasks = useSelector(state=>state.portfolio.tasks)
 
-	useEffect(()=>{
-							//get the screen size
-		const handleResize = ()=>setScreenSize(window.innerWidth)
+	const toggleNavBtn = ()=>{
 
-		window.addEventListener('resize', handleResize)
+		let sideBar = document.getElementById('sidebar')
 
-		handleResize()
-
-		return ()=>window.removeEventListener('resize', handleResize)
-	},[])
-
-	useEffect(()=>{
-
-		if (screenSize <= 900) {
-			dispatch(setActiveMenu_screenSize({active:false,screenSize}))
+		if(!sideBar.style.display || sideBar.style.display === 'none'){
+			sideBar.style.display = 'block'
 		}else{
-			dispatch(setActiveMenu_screenSize({active:true,screenSize}))
+			sideBar.style.display = 'none'
 		}
+	}
 
-	},[screenSize])
 
 	useEffect(()=>{
-
+		let timeOut
 		if(portfolios.length){
 
-			let timeOut = setTimeout(()=>{
+			timeOut = setTimeout(()=>{
 				let percentCH = 0.05
 
 				//calculate for percentage change PC
@@ -132,22 +117,27 @@ const Navbar = () => {
 			
 		}
 
+		return ()=>{
+
+			clearTimeout(timeOut)
+		}
+
 
 	},[accountBalance])
 
 	return (
-		<div className='flex justify-between relative items-center flex-1 pr-1'>
+		<div className='flex relative justify-between items-center md:pr-1 w-full'>
 			<NavButton 
 				title="Menu" 
 				color={currentColor}
 				icon={<AiOutlineMenu/>}
-				customFunc={()=>dispatch(toggleActiveMenu('activeMenu'))}
+				customFunc={toggleNavBtn}
 			/>
 			<div className=''>
 					<Link to="/" 
 					className="items-center ml-3 flex text-xl 
 					font-extrabold tracking-tight dark:text-white  text-slate-900">
-						Trdefx
+						Tradefx
 					</Link>
 			</div>
 

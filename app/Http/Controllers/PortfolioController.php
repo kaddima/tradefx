@@ -193,7 +193,7 @@ class PortfolioController extends Controller
             //return gettype($portfolios);
 
             //get the portfolio to close
-            $target = [];
+            $target = new \stdClass;
 
             foreach ($portfolios as $key => $portfolio){
 

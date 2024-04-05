@@ -1,13 +1,14 @@
 import React, { useEffect, useMemo } from 'react'
 import { useDispatch,useSelector } from 'react-redux';
 import _ from 'lodash';
-import $ from 'jquery'
-import {setCategoryAssets} from "../../store/assetsSlice"
+import {setCategoryAssets} from "../../../store/assetsSlice"
 
 import axios from 'axios';
-import TableRow from '../../components/tradingView/TableRow';
+import TableRow from '../../../components/tradingView/TableRow';
+import AssetColumn from './AssetColumn';
 
-const AssetTable = ({data}) => {
+
+const MobileAssetTable = ({data}) => {
     const dispatch = useDispatch()
     const currentColor = useSelector(state=>state.main.currentColor)
     //get all favorite assets
@@ -73,37 +74,9 @@ const AssetTable = ({data}) => {
     },[activeCategory,assetByCategory.current_page])
 
   return (
-        <div  className='w-full relative md:h-full bg-white dark:bg-secondary-dark-bg dark:text-gray-200 text-gray-700'>
-            <div id='scroll-overlay' className='fixed inset-0 border hidden'></div>
-            <div className='flex items-center w-full text-xs mb-[2px] py-2 bg-white dark:bg-secondary-dark-bg'>
-                <div className='flex-grow-[1.7] w-full'>
-                    Market
-                </div>
-                <div className='flex-grow-[1.1] w-full'>
-                    Change
-                </div>
-                <div className='flex-grow-[1.8] w-full'>
-                    Sell
-                </div>
-                <div className='flex-grow-[1.8] w-full'>
-                    Buy
-                </div>
-                <div className='flex-grow-[1.5] w-full hidden md:block'>
-                    <div className='flex items-center flex-grow-[1.5] w-full justify-between'>
-                        <div className=''>
-                            Low
-                        </div>
-                        <div className=''>
-                            High
-                        </div>
-                    </div>
-                    
-                </div>
-               
-                <div className='min-w-[60px] md:block hidden'></div>
-            </div>
-
-            <div id='trade-container' className='h-[calc(100%-30px)] overflow-y-auto overflow-x-hidden'>
+        <div  className='w-full relative md:h-full dark:text-gray-200 text-gray-700'>
+          
+            <div id='trade-container' className='h-[calc(100%-40px)] overflow-y-auto overflow-x-hidden space-y-1'>
  
                 {data.map((asset,i)=>{
 
@@ -116,7 +89,7 @@ const AssetTable = ({data}) => {
                         }
                     })}
 
-                    return  <TableRow key={i}
+                    return  <AssetColumn key={i}
                                     inFavorite={isfavorite}
                                     favoriteAssets={favoriteAssets}
                                     data={asset} currentColor={currentColor}/>
@@ -130,4 +103,4 @@ const AssetTable = ({data}) => {
   )
 }
 
-export default AssetTable
+export default MobileAssetTable

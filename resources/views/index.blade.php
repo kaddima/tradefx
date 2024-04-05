@@ -42,13 +42,60 @@
             </div>
         </div>
 
-        <div class="w-4/5 m-auto mt-5">
+        <div class="w-[90%] md:w-4/5 mx-auto flex flex-col md:flex-row justify-between gap-10 py-10 h-[70vh] md:h-[85vh]">
+            <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container" style="height:100%;width:100%">
+            <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+            {{-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div> --}}
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+            {
+            "autosize": true,
+            "symbol": "NASDAQ:AAPL",
+            "interval": "D",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "enable_publishing": false,
+            "allow_symbol_change": true,
+            "calendar": false,
+            "support_host": "https://www.tradingview.com"
+        }
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
+        </div>
+
+        <div class="w-4/5 mx-auto mt-5">
             <h1 class="font-extrabold md:text-6xl leading-none text-center">Real Time updates & news alerts for 1,000+ markets</h1>
 
             <h1 class="text-3xl font-bold my-5 text-orange-400">Market summary</h1>
-            <div id="assets" class=" m-auto mt-10">
-
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                {{-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div> --}}
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+                {
+                "width": "100%",
+                "height": "100%",
+                "currencies": [
+                "EUR",
+                "USD",
+                "JPY",
+                "GBP",
+                "CHF",
+                "AUD",
+                "CAD",
+                "NZD"
+                ],
+                "isTransparent": false,
+                "colorTheme": "light",
+                "locale": "en",
+                "backgroundColor": "#ffffff"
+            }
+                </script>
             </div>
+            <!-- TradingView Widget END -->
 
             <h1 class="text-3xl font-bold my-7 text-orange-400">News Snaps</h1>
             <div class="flex mt-10">

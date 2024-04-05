@@ -50,35 +50,6 @@ th:nth-last-child(1){
 
 }
 
-.dark th{
-  @apply text-slate-300;
-
-}
-
-tr td{
- 
-  padding: 7px 8px;
-  min-width: 10%;
-  height: 1rem;
-  color: #c2c2c2;
-  
-}
-
-td:nth-child(3){
-  width: 10%;
-  
-  
-}
-
-td:nth-child(4){
-  width: 10%;
-  padding-left: 2rem;
-}
-
-td:nth-of-type(1) div{
-  margin-left: 10px;
-}
-
 
 @tailwind base;
 @tailwind components;

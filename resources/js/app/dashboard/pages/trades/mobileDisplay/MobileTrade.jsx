@@ -1,14 +1,15 @@
 import React, {useState } from 'react'
 import { useSelector,useDispatch } from 'react-redux'
-import { updatePortfolio,addPortfolio } from '../../store/portfolioSlice'
-import { updateAccount } from '../../store/accountSlice'
+import { updatePortfolio,addPortfolio } from '../../../store/portfolioSlice'
+import { updateAccount } from '../../../store/accountSlice'
 import _ from 'lodash'
-
+import $ from 'jquery'
 import {toast} from "react-toastify"
+import { FaArrowLeft } from 'react-icons/fa'
 
 //Chart.register(ArcElement)
 
-const SidebarTrades = ({asset}) => {
+const MobileTrade = () => {
 
 	const dispatch = useDispatch();
 
@@ -96,38 +97,65 @@ const SidebarTrades = ({asset}) => {
 
 	}
 
+    if(!selectedAsset?.id){
+        return null
+    }
+
   return (
     <>
-        <div className='bg-transparent flex flex-col h-full'>
-            <div className='bg-white dark:bg-secondary-dark-bg'>
-                <div className='p-4 dark:text-gray-300'>
-                    <div className='text-center'>
-                        <p className='text-xs font-bold'>{selectedAsset?.name ? selectedAsset?.name : selectedAsset?.symbol}</p>
-                        <span className='text-sm font-bold' >${selectedAsset?.sell ? (Number(selectedAsset?.sell)).toLocaleString() : 0}</span>
+        <div className='bg-white dark:bg-main-dark-bg flex flex-col absolute top-0 h-full w-full px-2 dark:text-gray-300'>
+            
+            <div className=''>
+                <div className='flex items-center'>
+                    <div>
+                        <FaArrowLeft onClick={()=>{$('#mobile-trade').hide()}} className='cursor-pointer'/>
+                    </div>
+                    <div className='flex-1 text-center'>
+                        <p className='text-xs font-bold'>{selectedAsset?.name ? selectedAsset?.name : selectedAsset?.symbol} {selectedAsset?.category == 'cryptocurrency' ? '/ USD' : ''}</p>
+                    </div>
+                    
+                </div>
 
-                    </div>
-                    <div className='h-[2px] bg-slate-600 mt-12'> </div>
+                <div className='flex items-center text-xs space-x-[2px] font-semibold mt-5'>
+                    <button className='bg-red-600/20 flex-1 text-left py-2 rounded-tl-md rounded-bl-md pl-2'>
+                        <div className='space-y-1'>
+                            <h1 className='uppercase'>Sell</h1>
+                            <p>${selectedAsset?.sell ? (Number(selectedAsset?.sell)).toLocaleString() : 0}</p>
+                        </div>
+                    </button>
+                    <button className='bg-[#03c9d7]/20 flex-1 text-right py-2 rounded-tr-md rounded-br-md pr-2'>
+                        <div className='space-y-1'>
+                            <h1 className='uppercase'>Buy</h1>
+                            <p>${selectedAsset?.buy ? (Number(selectedAsset?.buy)).toLocaleString() : 0}</p>
+                        </div>
+                    </button>
+                </div>     
+            </div>
 
-                    <div className='mt-4'>
-                        <p className='block mb-2 text-sm font-bold text-left'>Amount (Margin)</p>
-                        <input type="number" value={value}
-                        className="w-full py-1 rounded-sm dark:bg-main-dark-bg bg-main-bg
-                          dark:text-gray-300 pl-4"
-                        onChange={handleInput}
-                        />
-                    </div>
-                    <div className='mt-4 flex justify-between text-xs font-bold'>
-                        <div>Size</div>
-                        <span>{size ? _.round(size,6).toLocaleString() : 0}</span>
-                    </div>
-					<div className='mt-4 flex justify-between text-xs font-bold'>
-                        <div>Leverage</div>
-                        <span>{assetLeverage ? assetLeverage : '1:1'}</span>
-                    </div>
+            <div className='h-[2px] bg-slate-600 mt-5'></div>
+
+            <div className='bg-white dark:bg-secondary-dark-bg rounded-md p-2'>
+                <div className='mt-4'>
+                    <p className='block mb-2 text-sm font-bold text-left'>Amount (Margin)</p>
+                    <input type="number" value={value}
+                    className="w-full py-1 rounded-sm bg-transparent border border-slate-600
+                    dark:text-gray-300 pl-4"
+                    onChange={handleInput}
+                    />
+                </div>
+                <div className='mt-4 flex justify-between text-xs font-bold'>
+                    <div>Quantity</div>
+                    <span>{size ? _.round(size,6).toLocaleString() : 0}</span>
+                </div>
+                <div className='mt-4 flex justify-between text-xs font-bold'>
+                    <div>Leverage</div>
+                    <span>{assetLeverage ? assetLeverage : '1:1'}</span>
                 </div>
             </div>
 
-            <div className='bg-white dark:bg-secondary-dark-bg mt-1'>
+        
+
+            <div className='bg-white dark:bg-secondary-dark-bg mt-1 rounded-md'>
                 <div className='font-bold text-xs dark:text-gray-300 p-3'>
                    <div className='flex justify-between mt-3 items-center border-b-1 pb-2 dark:border-b-slate-600'>
                         <span className='block'><span className='w-2 h-2 mr-1 inline-block bg-blue-500 rounded'> </span>Trade Size</span>
@@ -136,7 +164,7 @@ const SidebarTrades = ({asset}) => {
 
                 </div>
             </div>
-            {selectedAsset?.type && (<div className='bg-white flex-1 dark:bg-secondary-dark-bg mt-3 px-2 py-3'>
+            {selectedAsset?.type && (<div className='bg-white flex-1 dark:bg-secondary-dark-bg mt-3 px-2 py-3 rounded'>
                  <button className='p-3 text-sm text-center text-slate-900 font-bold rounded-sm w-full'
                     style={{backgroundColor: currentColor}}
                     data-type={selectedAsset?.type}
@@ -149,6 +177,6 @@ const SidebarTrades = ({asset}) => {
   )
 }
 
-export default SidebarTrades
+export default MobileTrade
 
 

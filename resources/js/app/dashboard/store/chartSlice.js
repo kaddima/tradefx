@@ -1,12 +1,4 @@
-import {createSlice,createAsyncThunk} from "@reduxjs/toolkit"
-
-import axios from "axios";
-
-export const getTimeSeries = createAsyncThunk('chart/timeSeries', async ()=>{
-    const response = await 1
-    return response.data
-})
-
+import {createSlice} from "@reduxjs/toolkit"
 
 const initialState = {
 
@@ -22,14 +14,7 @@ const ChartSlice = createSlice({
             state.charts = action.payload
         }
     },
-    extraReducers :(builder)=>{
-        builder
-        .addCase(getTimeSeries.fulfilled, (state,action)=>{
-
-            state.charts = action.payload.data
-           
-         })
-    }
+   
 })
 
 

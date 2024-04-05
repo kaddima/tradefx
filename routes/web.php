@@ -16,8 +16,10 @@ use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use App\Http\Controllers\UpdateAssetsController;
 use App\Http\Controllers\EmailVerificationController;
+use App\Http\Controllers\AssetsController;
 
 use Illuminate\Session;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -149,30 +151,7 @@ Route::get('/verify_email', function (){
     }
 
 });
-
-Route::get('/dashboard/payment_methods',[PaymentController::class,'paymentMethod'])->middleware('auth');
-
-//return account details for specifc user
-Route::get('/user-account', [AccountController::class, 'getUserAccount'])->middleware('auth');
-Route::post('/admin/all-admin',[AccountController::class,'allAdmin']);
-Route::get('/admin/admin-users',[AccountController::class,'admin_data']);
-Route::post('/admin/all-admin/users',[AccountController::class,'admin_data']);
-Route::post('/admin/admin-config',[UserActionController::class,'adminConfig']);
-Route::post('/admin/all-admin/credit-transactions', [AccountController::class,'creditTransactions']);
-Route::post('/admin/all-admin/investment-history',[AccountController::class,'investmentHistory']);
-Route::get('/portfolio/fetch',[PortfolioController::class,'show'])->middleware('auth');
-Route::post('/portfolio/add',[PortfolioController::class,'createPortfolio']);
-Route::post('/portfolio/close',[PortfolioController::class,'closePortfolio']);
-Route::post('/admin/portfolio/delete',[PortfolioController::class,'deletePortfolio']);
-Route::post('/admin/portfolio/generate-profit-loss',[PortfolioController::class,'generateProfitLoss']);
-Route::post('/admin/portfolio/task/close',[PortfolioController::class,'closeTask']);
-Route::get('/admin/portfolio/fetch-tasks',[PortfolioController::class,'getTasks']);
-Route::post('/favorite/add', [FavoriteController::class, 'addFavorite']);
-Route::post('/favorite/remove', [FavoriteController::class, 'removeFavorite']);
-Route::get('/admin/crypto-setup',[PaymentController::class,'show']);
-Route::post('/admin/crypto-setup',[PaymentController::class,'crypto_setup']);
-Route::post('/admin/user-action',[UserActionController::class,'store']);
-Route::post('/admin/credit-user',[UserActionController::class,'credit_user']);
+//data for landing page
 Route::get('/assets/home', function (){
 
     $crypto = DB::table('asset_prices')
@@ -215,59 +194,35 @@ Route::get('/assets/home', function (){
     ]);
 
 });
+Route::get('/assets', [AssetsController::class, 'initialAssets'])->middleware('auth');
+Route::get('/assets/forex/currency', [AssetsController::class, 'forexByCurrency'])->middleware('auth');
+
+
+Route::get('/dashboard/payment_methods',[PaymentController::class,'paymentMethod'])->middleware('auth');
+
+//return account details for specifc user
+Route::get('/user-account', [AccountController::class, 'getUserAccount'])->middleware('auth');
+Route::post('/admin/all-admin',[AccountController::class,'allAdmin']);
+Route::get('/admin/admin-users',[AccountController::class,'admin_data']);
+Route::post('/admin/all-admin/users',[AccountController::class,'admin_data']);
+Route::post('/admin/admin-config',[UserActionController::class,'adminConfig']);
+Route::post('/admin/all-admin/credit-transactions', [AccountController::class,'creditTransactions']);
+Route::post('/admin/all-admin/investment-history',[AccountController::class,'investmentHistory']);
+Route::get('/portfolio/fetch',[PortfolioController::class,'show'])->middleware('auth');
+Route::post('/portfolio/add',[PortfolioController::class,'createPortfolio']);
+Route::post('/portfolio/close',[PortfolioController::class,'closePortfolio']);
+Route::post('/admin/portfolio/delete',[PortfolioController::class,'deletePortfolio']);
+Route::post('/admin/portfolio/generate-profit-loss',[PortfolioController::class,'generateProfitLoss']);
+Route::post('/admin/portfolio/task/close',[PortfolioController::class,'closeTask']);
+Route::get('/admin/portfolio/fetch-tasks',[PortfolioController::class,'getTasks']);
+Route::post('/favorite/add', [FavoriteController::class, 'addFavorite']);
+Route::post('/favorite/remove', [FavoriteController::class, 'removeFavorite']);
+Route::get('/admin/crypto-setup',[PaymentController::class,'show']);
+Route::post('/admin/crypto-setup',[PaymentController::class,'crypto_setup']);
+Route::post('/admin/user-action',[UserActionController::class,'store']);
+Route::post('/admin/credit-user',[UserActionController::class,'credit_user']);
+
 Route::post('/admin/update-assets',[UpdateAssetsController::class, 'updateAssets']);
-
-Route::get('/assets', function (){
-
-    //logged in user
-    $user = auth()->user()['id'];
-    $id = @request()->get('user_id');
-    $favorite = [];
-
-    $favorite_lists = DB::table('favorite')->where(['user_id'=>$user])->get();
-    if (!empty($favorite_lists)){
-        foreach ($favorite_lists as $list){
-
-            $favorite[] = DB::table('asset_prices')->where(['id'=>$list->asset_id])->first();
-        }
-    }
-
-
-    $crypto = DB::table('asset_prices')
-        ->where(['category'=>'cryptocurrency'])
-        ->orderBy('sell','desc')
-        ->get();
-
-    $forex = DB::table('asset_prices')
-        ->where(['category'=>'forex'])
-        ->orderBy('sell','desc')
-        ->limit(100)
-        ->get();
-
-    $oilMarket = DB::table('asset_prices')
-        ->where(['category'=>'oil_market'])
-        ->orderBy('sell','desc')
-        ->get();
-
-    $commodities = DB::table('asset_prices')
-        ->where(['category'=>'commodity'])
-        ->orderBy('sell','desc')
-        ->get();
-
-    $stocks = DB::table('asset_prices')
-        ->where(['category'=>'stocks'])
-        ->orderBy('sell','desc')
-        ->get();
-
-    return json_encode(['data'=>[
-        'crypto'=>$crypto,
-        'forex'=>$forex,
-        'stocks'=>$stocks,
-        'oilMarket'=>$oilMarket,
-        'commodities'=>$commodities,
-        'favorite'=>$favorite]
-    ]);
-})->middleware('auth');
 
 //Route::get('/admin/user-config',[ConfigController::class,'show']);
 Route::post('/admin/user-config',[ConfigController::class,'store']);
@@ -315,6 +270,7 @@ Route::get('logout', function (){
     return redirect('signin');
 });
 
+
 Route::fallback(function(){
 
     return redirect('/');
@@ -327,5 +283,53 @@ Route::get('/clear-cache', function(){
     \Illuminate\Support\Facades\Artisan::call('route:clear');
     
     return 'clear';
+    
+});
+
+Route::get('/save', function(){
+
+
+    $endpoint = 'https://api.coingecko.com/api/v3/coins/markets';
+
+    $apiKey = 'CG-zKpf6mwWLDoCP47WGHqd7834'; 
+    $params = ['vs_currency'=>'usd','order'=>'market_cap_desc','per_page'=>'100',
+    'x_cg_demo_api_key'=>$apiKey];
+
+    $url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false&locale=en';
+
+
+    $marketUrl = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=24h&locale=en&x_cg_demo_api_key=CG-zKpf6mwWLDoCP47WGHqd7834';
+    
+
+
+    $client = new \GuzzleHttp\Client();
+    $response = $client->request('GET', $marketUrl);
+    
+    $content =  json_decode($response->getBody(),true); // '{"id": 1420053, "name": "guzzle", ...}'
+    
+    foreach($content as $result){
+
+        $column = [
+            'category'=>'cryptocurrency',
+            'id_name'=>$result['id'],
+            'symbol'=>$result['symbol'],
+            'name'=>$result['name'],
+            'sell'=> floatval($result['current_price']) - (floatval($result['current_price']) * 0.008),
+            'buy'=>floatval($result['current_price']),
+            'low'=>floatval($result['low_24h']),
+            'high'=>floatval($result['high_24h']),
+            'change_one_day'=>floatval($result['price_change_24h']),
+            'percentage_change'=>$result['price_change_percentage_24h'],
+            'image'=>$result['image']
+            
+        ];
+
+        DB::table('asset_prices')->insert($column);
+
+        
+    }
+    
+    return json_encode(['data'=>$column]);
+   // return json_encode(['data'=>$content]);
     
 });

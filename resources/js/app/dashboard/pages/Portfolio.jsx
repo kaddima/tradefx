@@ -15,7 +15,7 @@ const PortfolioRow = ({data})=>{
 
 	const dispatch = useDispatch()
     const currentColor = useSelector(state=>state.main.currentColor)
-	const userId = useSelector(state=>state.account.user.id)
+	const userId = useSelector(state=>state.account?.user?.id)
 
 	const handlePortfolioClose = (e)=>{
 		const portfolio_id = e.currentTarget.dataset.id
@@ -75,7 +75,7 @@ const PortfolioRow = ({data})=>{
                     <span>${_.round(data.profit_loss,2).toLocaleString()}</span>
                 </td>
                 <td className='border-b-1 border-b-gray-300 dark:border-b-slate-700'>
-					{(userId == data.creator_id) && ( <button type='button' className='px-1 py-1 text-slate-900 font-bold bg-sky-500 rounded inline-block text-center
+					{(userId == data.created_by) && ( <button type='button' className='px-1 py-1 text-slate-900 font-bold bg-sky-500 rounded inline-block text-center
                      cursor-pointer' style={{backgroundColor:currentColor}} data-id={data.id} data-name={data.asset_name ? data.asset_name : data.symbol}
 					 onClick={handlePortfolioClose}>close</button>)}
                    
@@ -189,7 +189,7 @@ const Portfolio = () => {
                     <div className='mt-3 space-y-1'>
                         <p >No Position Opened</p>
                         <p className='text-sm font-semibold'>Please start trading to see securities in your portfolio</p>
-                    </div>       
+					</div>       
                 </div>
             </div>
         )
@@ -239,6 +239,8 @@ const Portfolio = () => {
 					</tbody>
 				</table>
 			</div>
+
+			
 		</div>
 	</div>
 
