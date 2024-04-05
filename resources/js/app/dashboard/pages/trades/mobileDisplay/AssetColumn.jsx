@@ -173,7 +173,7 @@ const AssetColumn = ({currentColor,data,inFavorite,favoriteAssets})=> {
 
                                  dispatch(addFavorite({id}))
                              }}>
-                            <span className=''><BiBookAdd size={14}/></span>
+                            <span className=''><BiBookAdd size={18}/></span>
                         </div>
                     ) : (
 
@@ -186,7 +186,7 @@ const AssetColumn = ({currentColor,data,inFavorite,favoriteAssets})=> {
 							deleteFavorite(id)
                             
                         }}>
-                            <BsCheck2Circle size={14}/>
+                            <BsCheck2Circle size={18}/>
                         </div>
                     )}
 
@@ -231,40 +231,12 @@ const AssetColumn = ({currentColor,data,inFavorite,favoriteAssets})=> {
                         
                         
                     }}>
-                        <TbChartCandle size={14} style={{color:currentColor}}/>
+                        <TbChartCandle size={18} style={{color:currentColor}}/>
                     </button> 
                 </div>
                        
             </div>
     </div>
-       
-        //  <div data-id={data.id} data-category={data.category} onClick={chooseAsset}
-        //     className={`asset-row flex items-center text-xs hover:bg-gray-100 hover:dark:bg-slate-800 bg-white
-		// 	font-bold dark:text-gray-100 dark:bg-secondary-dark-bg border-b-1 px-1
-		// 	border-b-slate-300 dark:border-slate-800 cursor-pointer ${selectedAsset && selectedAsset.id == data.id && 'bg-gray-100 dark:bg-slate-800'}`}>
-
-        //     <div className='md:block hidden flex-grow-[1.5] w-full relative h-full py-2'>
-        //         <div className='inline-block w-full mb-1 relative'>
-        //             <div className='inline-block transition-all -top-3 absolute' style={{left:lineScale+'%',transform:`translateX(-${lineScale}%)`}}>
-        //                 <MdArrowDropDown size={16} className={lineScale < 50 ? `text-red-600`:`text-green-600`}/>
-        //             </div>
-        //             <div className='h-[2px] w-full bg-slate-700'></div>
-        //         </div>
-        //         <div className='flex items-center justify-between w-full '>
-        //             <div className={`${data.highlight && data.highlight.low === 'fall'?'text-red-600' : 'text-slate-100'} `}>
-        //                 {formatPrice(data.low)}
-        //             </div>
-        //             <div className={`${data.highlight && data.highlight.high === 'none'?'text-slate-200' : 'text-green-600'} `}>
-        //                 {formatPrice(data.high)}
-        //             </div>
-        //         </div>
-                
-                
-            
-        //     </div>
-
-           
-        // </div>
     )
 }
 

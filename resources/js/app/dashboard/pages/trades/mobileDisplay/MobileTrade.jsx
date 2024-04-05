@@ -1,4 +1,4 @@
-import React, {useState } from 'react'
+import React, {useEffect, useMemo, useState } from 'react'
 import { useSelector,useDispatch } from 'react-redux'
 import { updatePortfolio,addPortfolio } from '../../../store/portfolioSlice'
 import { updateAccount } from '../../../store/accountSlice'
@@ -6,15 +6,17 @@ import _ from 'lodash'
 import $ from 'jquery'
 import {toast} from "react-toastify"
 import { FaArrowLeft } from 'react-icons/fa'
+import { updateSelectedAsset } from '../../../store/assetsSlice'
 
 //Chart.register(ArcElement)
 
-const MobileTrade = () => {
+const MobileTrade = ({visible=false}) => {
 
 	const dispatch = useDispatch();
 
 	const currentColor = useSelector(state=>state.main.currentColor)
 	const selectedAsset = useSelector(state=>state.assets.selectedAsset)
+    const assets = useSelector(state=>state.assets.assets)
 	const assetLeverage = useSelector(state=>state.assets.leverage[selectedAsset?.category])
 
 
@@ -22,6 +24,18 @@ const MobileTrade = () => {
 	const [value,setValue] = useState(0)
     const [marginAmount,setMarginAmount] = useState()
 	const [fullPrice,setFullPrice] = useState(0)
+
+    const assetPrice = useMemo(()=>{
+
+        let categoryAsset = assets[selectedAsset?.category]
+
+        let liveChanges = categoryAsset?.data.find((v,i)=>{
+
+            return v.id == selectedAsset?.id
+        })
+
+        return liveChanges
+    },[assets[selectedAsset?.category]])
 
 	const handleInput = (e)=>{
 
@@ -97,9 +111,11 @@ const MobileTrade = () => {
 
 	}
 
+
     if(!selectedAsset?.id){
         return null
     }
+
 
   return (
     <>
@@ -108,7 +124,7 @@ const MobileTrade = () => {
             <div className=''>
                 <div className='flex items-center'>
                     <div>
-                        <FaArrowLeft onClick={()=>{$('#mobile-trade').hide()}} className='cursor-pointer'/>
+                        <FaArrowLeft onClick={()=>{$('#mobile-trade').hide(); dispatch(updateSelectedAsset())}} className='cursor-pointer'/>
                     </div>
                     <div className='flex-1 text-center'>
                         <p className='text-xs font-bold'>{selectedAsset?.name ? selectedAsset?.name : selectedAsset?.symbol} {selectedAsset?.category == 'cryptocurrency' ? '/ USD' : ''}</p>
@@ -116,17 +132,17 @@ const MobileTrade = () => {
                     
                 </div>
 
-                <div className='flex items-center text-xs space-x-[2px] font-semibold mt-5'>
-                    <button className='bg-red-600/20 flex-1 text-left py-2 rounded-tl-md rounded-bl-md pl-2'>
+                <div className='flex items-center text-xs space-x-[2px] font-semibold mt-5 text-white'>
+                    <button className={`${selectedAsset.type == 'Sell' ? 'bg-red-600 ' : 'bg-red-600/20 border border-red-600'} flex-1 text-left py-2 rounded-tl-md rounded-bl-md pl-2`}>
                         <div className='space-y-1'>
-                            <h1 className='uppercase'>Sell</h1>
-                            <p>${selectedAsset?.sell ? (Number(selectedAsset?.sell)).toLocaleString() : 0}</p>
+                            <h1 className={`uppercase ${selectedAsset.type == 'Sell' ? 'text-white' : 'text-red-600'}`}>Sell</h1>
+                            <p>{assetPrice?.sell ? (Number(assetPrice?.sell)).toLocaleString() : 0}</p>
                         </div>
                     </button>
-                    <button className='bg-[#03c9d7]/20 flex-1 text-right py-2 rounded-tr-md rounded-br-md pr-2'>
+                    <button className={`${selectedAsset.type == 'Buy' ? 'bg-[#2b939b]' : 'bg-[#349fa7]/20 border border-[#349fa7]'}  flex-1 text-right py-2 rounded-tr-md rounded-br-md pr-2`}>
                         <div className='space-y-1'>
-                            <h1 className='uppercase'>Buy</h1>
-                            <p>${selectedAsset?.buy ? (Number(selectedAsset?.buy)).toLocaleString() : 0}</p>
+                            <h1 className={`uppercase ${selectedAsset.type == 'Buy' ? 'text-white' : 'text-[#349fa7]'}`}>Buy</h1>
+                            <p>{assetPrice?.buy ? (Number(assetPrice?.buy)).toLocaleString() : 0}</p>
                         </div>
                     </button>
                 </div>     
@@ -171,7 +187,6 @@ const MobileTrade = () => {
 					onClick={handleInvest}>{selectedAsset?.type}</button>
             </div>)}
             
-            {/* <ToastContainer/> */}
         </div>
     </>
   )

@@ -6,11 +6,11 @@ import MobileTradeChart from './MobileTradeChart'
 
 const Layout = ({assets}) => {
   return (
-    <div className='w-full h-full relative overflow-scroll'>
+    <div className='w-full h-full relative overflow-hidden'>
   
         <MobileWatchList/>
 
-        <div className='mt-2 bg-white dark:bg-main-dark-bg px-1'>
+        <div id='trade-container' className='mt-2 bg-white dark:bg-main-dark-bg px-1 h-[calc(100%-45px)] overflow-scroll'>
           <MobileAssetTable data={assets}/>
         </div>
 
@@ -21,9 +21,7 @@ const Layout = ({assets}) => {
 		{/* BUY/Sell without chart */}
 		<div id="mobile-trade" className='hidden'>
 			<MobileTrade/>
-		</div>
-		
-
+		</div>	
     </div>
   )
 }

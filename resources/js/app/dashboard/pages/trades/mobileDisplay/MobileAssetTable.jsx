@@ -74,9 +74,9 @@ const MobileAssetTable = ({data}) => {
     },[activeCategory,assetByCategory.current_page])
 
   return (
-        <div  className='w-full relative md:h-full dark:text-gray-200 text-gray-700'>
+        <div  className='w-full relative h-full dark:text-gray-200 text-gray-700'>
           
-            <div id='trade-container' className='h-[calc(100%-40px)] overflow-y-auto overflow-x-hidden space-y-1'>
+            <div className='space-y-1'>
  
                 {data.map((asset,i)=>{
 
